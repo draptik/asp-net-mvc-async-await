@@ -1,0 +1,23 @@
+﻿@model List<DemoWebApp.Web.Controllers.CustomerVm>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TITLE</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var customerVm in Model)
+            {
+            <li>@customerVm.FirstName</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
