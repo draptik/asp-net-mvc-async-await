@@ -17,7 +17,7 @@ namespace DemoWebApp.Web.Controllers
             var result = new List<CustomerVm>();
             for (int i = 0; i < 10; i++)
             {
-                result.Add(new CustomerVm {FirstName = "foo " + i.ToString()});
+                result.Add(new CustomerVm {FirstName = $"foo {i}"});
             }
             return result;
         }
